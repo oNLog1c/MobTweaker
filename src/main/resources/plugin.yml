@@ -1,0 +1,8 @@
+name: MobTweaker
+version: '1.8-1.19.4'
+main: me.nologic.mt.MobTweakerInstance
+api-version: 1.19
+prefix: MobTweaker
+authors: [ NoLogic ]
+description: MobTweaker is a plugin that optimizes and increases the spawning of monsters on your server.
+website: https://www.spigotmc.org/resources/mobtweaker.94187/

@@ -1,0 +1,44 @@
+# Welcome to MobTweaker.
+
+# Worlds in which MobTweaker will work.
+EnabledWorlds: [world]
+
+Radius:
+  X: 64
+  Y: 17
+  Z: 64
+
+# Unreachable hostile entity remover.
+# Hostile entities will consider unreachable (and useless) when no players around it,
+# and it has existed for a certain amount of ticks.
+HostileEntityCleaner:
+
+  Enabled: true
+
+  # Entity will not deleted by MobTweaker until the specified amount ticks have existed.
+  # ONE second equals 20 ticks.
+  MinTicksLived: 400
+
+  # Pause between iterations. In ticks.
+  RepeatTime: 100
+
+  # Entity types that allowed deleting.
+  # You can find all entity types here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+  AllowedEntityTypes: [ZOMBIE, CREEPER, SKELETON, SPIDER, CAVE_SPIDER, ENDERMAN, DROWNED, HUSK, STRAY, PHANTOM, VINDICATOR]
+  
+# Entity multiplier. Thanks to this, more hostile entities will appear around the players in a shorter time.
+HostileEntityMultiplier:
+  
+  Enabled: true
+  
+  # Chance the feature will trigger.
+  Chance: 20
+  
+  # How many additional mobs will spawn when triggered?
+  Multiplier: 1
+ 
+# Hostile entities will only spawn within a configurable radius of each player.
+# Spawning away from players will cancel.
+AggressiveEntitySpawnCancellation:
+  
+  Enabled: true
